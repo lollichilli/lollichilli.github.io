@@ -1,0 +1,18 @@
+h1 {
+  margin-top: 2rem;
+  color: #184e89;
+  text-align: center;
+}
+
+
+#user-info {
+  margin: 0 auto;
+  height: 10rem;
+  padding: 2rem;
+  margin-top: 5rem;
+  max-width: 30rem;
+  background-color: #9daab7;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
