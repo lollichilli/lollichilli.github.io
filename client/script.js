@@ -179,7 +179,7 @@ function logout() {
 
     // Onload behavior is different depending on path
     switch(pathname) {
-        case "/templates/index.html" :
+        case "/client/index.html" :
             // Get the username from session
             let username = sessionStorage.getItem("username");
             username = username ? username : redirect("login.html");
@@ -190,9 +190,9 @@ function logout() {
             requestBalance(username);
             break;
 
-        case "/templates/login.html" :
+        case "/client/login.html" :
             break;
-        case "/templates/transaction_history.html" :
+        case "/client/transaction_history.html" :
             // Get the username from session
             let currentUser = sessionStorage.getItem("username");
             currentUser = currentUser ? currentUser : redirect("login.html");
@@ -200,7 +200,7 @@ function logout() {
             requestTransactionsTo(currentUser);
             requestTransactionsFrom(currentUser);
             break;
-        case "/templates/send_money.html" :
+        case "/client/send_money.html" :
             let curUser = sessionStorage.getItem("username");
             curUser = curUser ? curUser : redirect("login.html");
             break;
